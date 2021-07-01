@@ -1,0 +1,106 @@
+
+body{
+  /*おみくじ*/
+  background: #efefef;
+  /*スロット*/
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+h1,p{
+  width:500px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h1{
+  text-align: left;
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+}
+
+.under{
+  border-bottom: dotted 3px rgb(252, 68, 197);
+}
+
+/*-----------------------おみくじ-----------------------*/
+#omikuji_btn{
+  width: 200px;
+  height: 200px;
+  background: #ef454a;
+  border-radius: 100px;
+  margin: 40px auto 80px auto;
+  text-align: center;
+  line-height: 200px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 42px;
+  font-family: 'ヒラギノ明朝 ProN W3', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 10px 0 #d1483e;
+  user-select: none;
+}
+
+#omikuji_btn:hover {
+  opacity: 0.9;
+}
+
+#omikuji_btn:active {
+  box-shadow: 0 5px 0 #d1483e;
+  margin-top: 35px;
+}
+
+/*-----------------------スロット-----------------------*/
+main {
+  width: 300px;
+  background: #ecf0f1;
+  padding: 20px;
+  border: 4px solid rgb(220, 156, 250);
+  border-radius: 12px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel img {
+  width: 90px;
+  height: 110px;
+  margin-bottom: 4px;
+}
+
+.stop {
+  cursor: pointer;
+  width: 90px;
+  height: 32px;
+  background: #2af3c7;
+  box-shadow: 0 4px 0 #31a78d;
+  border-radius: 16px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  user-select: none;
+}
+
+#spin {
+  cursor: pointer;
+  width: 280px;
+  height: 36px;
+  background: #3498db;
+  box-shadow: 0 4px 0 #2880b9;
+  border-radius: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  user-select: none;
+  margin: 0 auto 80px auto;
+}
+
+.unmatched{
+  opacity: 0.5;
+}
+.inactive{
+  opacity: 0.5;
+}
